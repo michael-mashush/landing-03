@@ -1,0 +1,17 @@
+.intro-image {
+    position: relative;
+    padding-top: 100%;
+    width: 100%;
+
+    &::before {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	height: 100%;
+    	width: 100%;
+    	border: 4px solid rgba(var(--color-03), 0.11);
+    	border-radius: 50%;
+    	background-color: rgba(var(--color-06), 0.08);
+    	content: '';
+    }
+}

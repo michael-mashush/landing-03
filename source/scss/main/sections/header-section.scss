@@ -1,0 +1,38 @@
+.header-section {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+    transition: all 0.2s;
+
+    &--active {
+    	background-color: rgba(var(--color-01), 0.95);
+    }
+
+    &__inner {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	height: var(--header-source-height);
+    	transition: height 0.2s;
+
+    	@media screen and (max-width: 1024px) {
+    		height: var(--header-mobile-height);
+    		border-bottom: 1px solid rgba(var(--color-03), 0.5);
+    	}
+    }
+
+    &__logotype {
+    	margin-right: 20px;
+    }
+
+    &__burger-button-wrapper {
+    	display: none;
+
+    	@media screen and (max-width: 1024px) {
+    		display: block;
+    	}
+    }
+}

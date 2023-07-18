@@ -1,0 +1,22 @@
+:root {
+    --default-container-width: 1700px;
+    --container-padding-value: 20px;
+    --header-source-height: 130px;
+    --header-mobile-height: 80px;
+    --color-01: 4, 4, 12;       /* #04040c */
+    --color-02: 58, 54, 84;     /* #3a3653 */
+    --color-03: 83, 84, 136;    /* #535488 */
+    --color-04: 89, 85, 114;    /* #595572 */
+    --color-05: 92, 67, 246;    /* #5c43f6 */
+    --color-06: 134, 155, 223;  /* #869bdf */
+    --color-07: 136, 136, 155;  /* #88889b */
+    --color-08: 188, 97, 243;   /* #bc61f3 */
+    --color-09: 111, 26, 219;   /* #6f1adb */
+    --color-10: 217, 216, 226;  /* #d9d8e2 */
+    --color-11: 240, 240, 240;  /* #f0f0f0 */
+    --color-12: 242, 242, 242;  /* #f2f2f2 */
+    --color-13: 255, 255, 255;  /* #ffffff */
+    --gradient_01: linear-gradient(180deg, rgba(var(--color-05)) 0%, rgba(var(--color-08)) 100%);
+    --gradient_02: linear-gradient(135deg, #ab96fd 20%, #b066fb 40%, #ca84ff 60%, #be99ff 70%, #a4b8ff 90%, #899bff 100%);
+    --gradient_03: radial-gradient(50% 50% at 50% 50%, rgba(var(--color-09), 0.5) 0%, transparent 100%);
+}

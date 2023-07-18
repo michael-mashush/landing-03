@@ -1,0 +1,29 @@
+.creators {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @media screen and (max-width: 1024px) {
+    	justify-content: center;
+    	grid-template-columns: repeat(2, 300px);
+    	gap: 60px 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+    	grid-template-columns: repeat(2, 260px);
+    }
+
+    @media screen and (max-width: 600px) {
+    	grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 425px) {
+    	grid-template-columns: 260px;
+    	gap: calc(40px + 10 * (100vw - 320px) / (425 - 320));
+    }
+
+    @media screen and (max-width: 320px) {
+    	grid-template-columns: 1fr;
+    	gap: 40px;
+    }
+}

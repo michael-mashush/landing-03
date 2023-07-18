@@ -1,0 +1,10 @@
+.navigation-user-account {
+    display: flex;
+    align-items: center;
+
+    &__control {
+    	&:not(:last-child) {
+    		margin-right: 15px;
+    	}
+    }
+}

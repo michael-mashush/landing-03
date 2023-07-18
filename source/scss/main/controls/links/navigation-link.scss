@@ -1,0 +1,19 @@
+.navigation-link {
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 19px;
+    color: rgba(var(--color-11));
+    transition: color 0.2s;
+
+    @media screen and (max-width: 1700px) {
+    	font-size: calc(16px + 3 * (100vw - 1024px) / (1700 - 1024));
+    }
+
+    @media screen and (max-width: 1024px) {
+    	font-size: calc(20px + 5 * (100vw - 320px) / (1024 - 320));
+    }
+
+    &--active, &:focus-visible, &:hover {
+    	color: rgba(var(--color-08));
+    }
+}

@@ -1,0 +1,28 @@
+.default-input {
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    letter-spacing: -0.02em;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 19px;
+    color: rgba(var(--color-11));
+    transition: background-color 0.2s;
+
+    @media screen and (max-width: 1700px) {
+    	padding-top: calc(11px + 4 * (100vw - 320px) / (1700 - 320));
+    	padding-right: calc(15px + 5 * (100vw - 320px) / (1700 - 320));
+    	padding-bottom: calc(11px + 4 * (100vw - 320px) / (1700 - 320));
+    	padding-left: calc(15px + 5 * (100vw - 320px) / (1700 - 320));
+    	font-size: calc(14px + 5 * (100vw - 320px) / (1700 - 320));
+    }
+
+    &:focus-visible, &:hover {
+    	background-color: rgba(var(--color-06), 0.14);
+    }
+
+    &::placeholder {
+    	color: var(--color-11, 0.7);
+    }
+}

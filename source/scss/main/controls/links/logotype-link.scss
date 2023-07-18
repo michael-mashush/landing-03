@@ -1,0 +1,16 @@
+.logotype-link {
+    display: flex;
+    width: 170px;
+
+    @media screen and (max-width: 1700px) {
+    	width: calc(150px + 20 * (100vw - 1024px) / (1700 - 1024));
+    }
+
+    @media screen and (max-width: 1024px) {
+    	width: 150px;
+    }
+
+    &__icon {
+    	width: 100%;
+    }
+}

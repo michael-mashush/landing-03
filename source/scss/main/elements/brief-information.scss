@@ -1,0 +1,17 @@
+.brief-information {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    &__logotype {
+    	margin-bottom: 25px;
+
+    	@media screen and (max-width: 1700px) {
+    		margin-bottom: calc(20px + 5 * (100vw - 320px) / (1700 - 320));
+    	}
+    }
+
+    &__text {
+    	margin-bottom: 25px;
+    }
+}

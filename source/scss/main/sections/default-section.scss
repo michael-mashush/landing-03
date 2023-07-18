@@ -1,0 +1,8 @@
+.default-section {
+    position: relative;
+    padding-bottom: 200px;
+
+    @media screen and (max-width: 1700px) {
+    	padding-bottom: calc(150px + 50 * (100vw - 320px) / (1700 - 320));
+    }
+}

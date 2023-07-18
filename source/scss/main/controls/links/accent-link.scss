@@ -1,0 +1,9 @@
+.accent-link {
+    font-weight: 700;
+    color: rgba(var(--color-11));
+    transition: color 0.2s;
+
+    &:focus-visible, &:hover {
+    	color: rgba(var(--color-08));
+    }
+}

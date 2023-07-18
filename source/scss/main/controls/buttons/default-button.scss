@@ -1,0 +1,52 @@
+.default-button {
+    display: inline-block;
+    overflow: hidden;
+    padding: 2px;
+    background: var(--gradient_01);
+    background-size: 100% 100%;
+    transition: background-size 0.2s;
+
+    &:focus-visible, &:hover {
+    	background-size: 100% 300%;
+    }
+
+    &__body {
+    	flex: 0 1 100%;
+    	padding: 13px 38px;
+    	transition: background-size 0.2s;
+
+    	@media screen and (max-width: 1700px) {
+    		padding-top: calc(11px + 2 * (100vw - 320px) / (1700 - 320));
+    		padding-right: calc(22px + 18 * (100vw - 320px) / (1700 - 320));
+    		padding-bottom: calc(11px + 2 * (100vw - 320px) / (1700 - 320));
+    		padding-left: calc(22px + 18 * (100vw - 320px) / (1700 - 320));
+    	}
+
+    	.default-button:not(.default-button--filled) & {
+    		background-color: rgba(var(--color-01));
+    	}
+
+    	.default-button.default-button--filled & {
+    		background: var(--gradient_01);
+    		background-size: 100% 100%;
+    	}
+
+    	.default-button.default-button--filled:focus-visible &, .default-button.default-button--filled:hover & {
+    		background-size: 100% 300%;
+    	}
+    }
+
+    &__text {
+    	text-align: center;
+    	text-transform: capitalize;
+    	white-space: nowrap;
+    	line-height: 1.2;
+    	font-weight: 500;
+    	font-size: 19px;
+    	color: rgba(var(--color-11));
+
+    	@media screen and (max-width: 1700px) {
+    		font-size: calc(14px + 5 * (100vw - 320px) / (1700 - 320));
+    	}
+    }
+}

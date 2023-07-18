@@ -1,0 +1,14 @@
+.paragraph {
+    letter-spacing: -0.02em;
+    line-height: 1.8;
+    font-weight: 400;
+
+    &--type-01 {
+    	font-size: 19px;
+    	color: rgba(var(--color-11));
+
+    	@media screen and (max-width: 1700px) {
+    		font-size: calc(14px + 5 * (100vw - 320px) / (1700 - 320));
+    	}
+    }
+}

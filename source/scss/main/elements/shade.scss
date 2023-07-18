@@ -1,0 +1,45 @@
+.shade {
+    position: absolute;
+    background-image: var(--gradient_03);
+    pointer-events: none;
+
+    &--intro {
+    	bottom: 0;
+    	left: 0;
+    	z-index: 1;
+    	height: 70vw;
+    	width: 70vw;
+    	transform: translate(-50%, 50%);
+    	filter: blur(220px);
+
+    	@media screen and (max-width: 1700px) {
+    		filter: blur(calc(100px + 140 * (100vw - 320px) / (1700 - 320)));
+    	}
+    }
+
+    &--creators {
+    	top: 0;
+    	right: 0;
+    	height: 46vw;
+    	width: 46vw;
+    	transform: translate(50%, -50%);
+    	filter: blur(180px);
+
+    	@media screen and (max-width: 1700px) {
+    		filter: blur(calc(50px + 130 * (100vw - 320px) / (1700 - 320)));
+    	}
+    }
+
+    &--contacts {
+    	top: 0;
+    	right: 0;
+    	height: 30vw;
+    	width: 30vw;
+    	transform: translate(50%, -50%);
+    	filter: blur(150px);
+
+    	@media screen and (max-width: 1700px) {
+    		filter: blur(calc(40px + 110 * (100vw - 320px) / (1700 - 320)));
+    	}
+    }
+}

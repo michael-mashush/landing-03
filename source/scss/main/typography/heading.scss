@@ -1,0 +1,33 @@
+.heading {
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    font-weight: 900;
+
+    &--type-01 {
+    	font-size: 96px;
+    	color: rgba(var(--color-12));
+
+    	@media screen and (max-width: 1700px) {
+    		font-size: calc(35px + 61 * (100vw - 320px) / (1700 - 320));
+    	}
+    }
+
+    &--type-02 {
+    	font-size: 56px;
+    	color: rgba(var(--color-12));
+
+    	@media screen and (max-width: 1700px) {
+    		font-size: calc(24px + 32 * (100vw - 320px) / (1700 - 320));
+    	}
+    }
+
+    &--type-03 {
+    	font-size: 22px;
+    	color: rgba(var(--color-12));
+
+    	@media screen and (max-width: 1700px) {
+    		font-size: calc(18px + 4 * (100vw - 320px) / (1700 - 320));
+    	}
+    }
+}

@@ -1,0 +1,20 @@
+.intro-content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    &__controls {
+    	display: flex;
+    	align-items: center;
+    }
+
+    &__control {
+    	&:not(:last-child) {
+    		margin-right: 25px;
+
+    		@media screen and (max-width: 1700px) {
+    			margin-right: calc(15px + 10 * (100vw - 320px) / (1700 - 320));
+    		}
+    	}
+    }
+}

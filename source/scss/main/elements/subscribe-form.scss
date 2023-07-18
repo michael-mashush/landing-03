@@ -1,0 +1,30 @@
+.subscribe-form {
+    display: grid;
+    padding: 15px;
+    border: 1px solid rgba(var(--color-03), 0.4);
+    border-radius: 10px;
+    background-color: rgba(var(--color-06), 0.1);
+    grid-template-columns: 1fr auto;
+    gap: 15px;
+
+    @media screen and (max-width: 1700px) {
+    	padding: calc(10px + 5 * (100vw - 320px) / (1700 - 320));
+    	gap: calc(10px + 5 * (100vw - 320px) / (1700 - 320));
+    }
+
+    @media screen and (max-width: 375px) {
+    	grid-template-columns: 1fr;
+    }
+
+    &__element {
+    	display: flex;
+    }
+
+    &__button {
+    	border-radius: 10px;
+
+    	@media screen and (max-width: 375px) {
+    		width: 100%;
+    	}
+    }
+}
